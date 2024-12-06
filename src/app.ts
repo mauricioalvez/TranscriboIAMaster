@@ -106,9 +106,9 @@ const voiceNoteFlow = addKeyword<BaileysProvider, IDatabase>(EVENTS.VOICE_NOTE)
                 model: 'whisper-1',
             });
             const transcription = transcribeResponse.text;
-            console.log('Transcripción del audio:', transcription);
+            console.log('Transcripción del audio por iamaster.com.ar:', transcription);
 
-            await flowDynamic('Transcripción automática del audio: ' + transcription);
+            await flowDynamic('Transcripción automática del audio por iamaster.com.ar: ' + transcription);
             
         } catch (error) {
             console.error('Error al procesar la nota de voz:', error);
